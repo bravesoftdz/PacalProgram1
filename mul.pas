@@ -1,5 +1,4 @@
 
-//PAREI RENOMEANDO OS ARQUIVOS TEMP PRO ARQUIVO ORIGINAL
 program Rhany;
 Uses
 Crt, DOS, sysutils;
@@ -23,8 +22,7 @@ Type TLeitor= Record
         Data_Emprestimo: Integer;
 	end;
 
-var resposta: Integer; resp2: Integer;
-	teste: Integer;
+var resposta, resp2, teste: Integer;
 	Leitor: TLeitor;
 	ArqLeitor: File of TLeitor;
 	ArqTempLeitor: File of TLeitor;
@@ -33,12 +31,8 @@ var resposta: Integer; resp2: Integer;
 	ArqLivro: File of TLivro;
 	ArqTempLivro: File of TLivro;
 	Livro_Encontrado: TLivro;
-	i: Integer;
-	j: Integer;
-	k: Longint;
-	proxCodLivro: Integer;
-	codEmpresLeitor: Integer;
-	codEmpresLivro: Integer;
+	i, j, proxCodLivro: Integer;
+	codEmpresLeitor, codEmpresLivro: Integer;
 	Ano, Mes, Dia, Dia_Semana: Word;
 	parameters: Integer;
 
