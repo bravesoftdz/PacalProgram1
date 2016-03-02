@@ -1,5 +1,6 @@
 
-program Rhany;
+//programa de entrada e saida de livros de uma biblioteca
+program Controle_Biblioteca;
 Uses
 Crt, DOS, sysutils;
 
@@ -608,7 +609,8 @@ Dia_Semana);
 	end;
 
 begin
-	VerificaTempoMatricula();
+	VerificaTempoMatricula(); //Ao iniciar o programa, é feita uma verificação do tempo de matricula dos leitores! Se exceder um prazo de 12 meses, a função exclui os registros do aluno.
+	
 	resposta := 0;
 	while(resposta <> 7) do
 	begin
